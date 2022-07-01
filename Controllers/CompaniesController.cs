@@ -3,11 +3,14 @@ using KariyerClone.Models.Dtos;
 using KariyerClone.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace KariyerClone.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CompaniesController : ControllerBase
     {
         private readonly ICompanyRepository _companyRepository;

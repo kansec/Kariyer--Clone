@@ -14,7 +14,7 @@ namespace KariyerClone.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class JobsController : ControllerBase
     {
 
